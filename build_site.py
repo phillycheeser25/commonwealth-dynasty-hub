@@ -49,9 +49,41 @@ articles = [
         "featuredPlayer": "Mike Vick Jr.",
         "tags": ["Commonwealth Clash", "Virginia", "Virginia Tech", "CFP"],
         "relatedArticleIds": ["a1", "a3", "a5"],
-        "heroImage": "week12-hero.png",
+        "heroImage": "",
         "heroTheme": "split",
         "published": "2028 Week 13",
+        "actionImages": [
+            {
+                "name": "Mike Vick Jr.",
+                "team": "Virginia Tech",
+                "image": "assets/action/mike-vick-jr-rollout.jpg",
+                "caption": "Vick Jr.'s left-handed rollout game forces Virginia to defend beyond the pocket.",
+            },
+            {
+                "name": "Devante Sampson",
+                "team": "Virginia",
+                "image": "assets/action/devante-sampson-pocket.jpg",
+                "caption": "Sampson's best answer is rhythm, protection and decisive pocket passing.",
+            },
+        ],
+        "playerImages": [
+            {
+                "name": "Mike Vick Jr.",
+                "team": "Virginia Tech",
+                "image": "assets/players/mike-vick-jr.png",
+                "rating": "91 OVR",
+                "style": "Left-handed dual threat",
+                "stats": "295-416 (70%), 3,892 YDS, 44 TD, 15 INT",
+            },
+            {
+                "name": "Devante Sampson",
+                "team": "Virginia",
+                "image": "assets/players/devante-sampson.png",
+                "rating": "84 OVR",
+                "style": "6-foot-6 right-handed pocket passer",
+                "stats": "235-362 (64%), 2,932 YDS, 25 TD, 8 INT",
+            },
+        ],
         "keyStats": [
             ("Matchup", "#10 Virginia at #6 Virginia Tech"),
             ("Records", "VT 10-1, UVA 9-2"),
@@ -59,10 +91,13 @@ articles = [
             ("Fake Spread", "Virginia Tech -4.5"),
         ],
         "body": [
-            "The rivalry game arrives with the exact kind of pressure that turns a dynasty file into folklore. Virginia Tech enters at 10-1 and ranked sixth in the CFP, while Virginia sits at 9-2 and tenth after a bye week built for planning, healing, and probably a little quiet confidence.",
-            "The standings make it sharper: Virginia Tech is first in the ACC, Virginia is second, and Miami is close enough to make every possession feel like it belongs to the entire league. A Hokies win would stamp control of the state and the conference race. A Cavaliers win would flip the rivalry conversation in one night.",
-            "The matchup starts with quarterbacks. Vick Jr. brings the bigger numbers and Heisman buzz. Devante Sampson brings a steadier Virginia profile with 2,932 passing yards and 25 touchdowns. There is no soft landing here. It is Commonwealth Clash week, and the state has receipts ready either way.",
-            "Prediction desk: Virginia Tech 34, Virginia 27. The Hokies have the recent form and the home-field edge, but Virginia's bye week makes this feel like a fourth-quarter game.",
+            "The Commonwealth Clash has rarely needed help feeling large. This time the standings do the amplifying. Virginia Tech enters at 10-1, first in the ACC and sixth in the CFP rankings. Virginia arrives rested at 9-2, second in the conference and tenth in the playoff ranking. The winner gets state control; the result may also redraw the ACC title and CFP pictures.",
+            "The central contrast is at quarterback. Mike Vick Jr. is the 91-overall engine of a Virginia Tech attack that wants to stretch the field and punish hesitation. The left-handed dual threat has completed 70 percent of his passes for 3,892 yards, 44 touchdowns and 15 interceptions. His movement changes the geometry even when he stays behind the line: edge defenders must account for him, and that extra beat creates room for vertical routes.",
+            "Devante Sampson gives Virginia a different silhouette. The 6-foot-6 pocket passer has completed 235 of 362 throws for 2,932 yards, 25 touchdowns and eight interceptions. His profile points toward timing, structure and winning from a firm platform. Virginia does not need Sampson to imitate Vick. It needs him to protect possessions, punish pressure and make the Hokies defend the full width of the field.",
+            "Recent form favors the home side. Virginia Tech just buried Wake Forest 49-7 while producing 489 yards, including 404 through the air. Vick threw for 296 yards and four touchdowns, and Marquis Woodside detonated for 10 catches, 190 yards and four scores. For the season, Woodside has 82 catches for 1,395 yards and 20 touchdowns. Virginia cannot treat him like one dangerous receiver among several; every coverage plan has to begin with where he is aligned.",
+            "Virginia's countermove is pace control. H. Sanders enters with 914 rushing yards and 12 touchdowns, while D. Lowell has supplied 796 receiving yards and nine scores. A steady run game and Sampson's pocket passing can shorten the night, keep Vick on the sideline and force Virginia Tech to execute against longer fields. The Cavaliers' bye week matters most if it produces answers on third down and in the red zone.",
+            "For Virginia Tech, the clean path is an early lead. Make Virginia abandon balance, turn the pass rush loose and let Vick attack a defense that can no longer disguise its intentions. For Virginia, the formula is almost the inverse: prevent explosive plays, tackle Woodside immediately and drag the game into a one-possession fourth quarter.",
+            "Commonwealth Wire prediction: Virginia Tech 34, Virginia 27. The Hokies have the more explosive quarterback, the hotter passing game and home field. Virginia has enough structure, rest and rivalry volatility to keep the fake spread at Virginia Tech -4.5 and every remote in the Commonwealth occupied until the final drive.",
         ],
     },
     {
@@ -375,6 +410,17 @@ def home():
           <article><span>Fake Spread</span><strong>Virginia Tech -4.5</strong><p>Prediction desk leans Hokies 34-27, with upset volatility very much alive.</p></article>
           <article><span>State of the Commonwealth</span><strong>The state has receipts ready</strong><p>One family rivalry, one ACC race, and one week of screenshots waiting.</p></article>
         </div>
+        <div class="home-qb-duel" aria-label="Quarterback matchup">
+          <article class="qb-panel vt">
+            <img src="assets/action/mike-vick-jr-rollout.jpg" alt="Mike Vick Jr. rolling left to pass for Virginia Tech">
+            <div><span>Virginia Tech | 91 OVR</span><strong>Mike Vick Jr.</strong><p>Left-handed dual threat | 3,892 YDS | 44 TD | 15 INT</p></div>
+          </article>
+          <div class="versus-mark"><span>QB Matchup</span><strong>VS</strong><em>Explosive creation meets pocket control</em></div>
+          <article class="qb-panel uva">
+            <img src="assets/action/devante-sampson-pocket.jpg" alt="Devante Sampson passing from the pocket for Virginia">
+            <div><span>Virginia | 84 OVR</span><strong>Devante Sampson</strong><p>6-foot-6 pocket passer | 2,932 YDS | 25 TD | 8 INT</p></div>
+          </article>
+        </div>
         <a class="button-link" href="articles/commonwealth-clash-preview/">Read the full preview</a>
       </section>
 
@@ -430,10 +476,38 @@ def simple_page(title, active, intro, content):
 def article_page(article):
     root = rel(2)
     related = [article_by_id[i] for i in article["relatedArticleIds"] if i in article_by_id]
-    hero = f'<img src="{root}{article["heroImage"]}" alt="{esc(article["title"])}">' if article["heroImage"] else f'<div class="article-hero-placeholder {esc(article["heroTheme"])}"><span>{esc(article["type"])}</span></div>'
+    player_images = article.get("playerImages", [])
+    action_images = article.get("actionImages", [])
+    profile_matchup = ""
+    if player_images:
+        player_cards = []
+        for player in player_images:
+            team_class = "vt" if player["team"] == "Virginia Tech" else "uva"
+            player_cards.append(f'''
+              <figure class="quarterback-card {team_class}">
+                <img src="{root}{esc(player['image'])}" alt="{esc(player['name'])} {esc(player['team'])} player card">
+                <figcaption><span>{esc(player['team'])} | {esc(player['rating'])}</span><strong>{esc(player['name'])}</strong><em>{esc(player['style'])}</em><p>{esc(player['stats'])}</p></figcaption>
+              </figure>''')
+        profile_matchup = '<section class="tale-of-tape"><span class="kicker">Quarterback Tale of the Tape</span><div class="quarterback-duel">' + ''.join(player_cards) + '</div></section>'
+    if action_images:
+        action_cards = []
+        for action in action_images:
+            team_class = "vt" if action["team"] == "Virginia Tech" else "uva"
+            action_cards.append(f'''
+              <figure class="action-photo {team_class}">
+                <img src="{root}{esc(action['image'])}" alt="{esc(action['name'])} in game action for {esc(action['team'])}">
+                <figcaption><strong>{esc(action['name'])}</strong><span>{esc(action['caption'])}</span></figcaption>
+              </figure>''')
+        hero = '<div class="action-duel">' + ''.join(action_cards) + '</div>'
+    elif player_images:
+        hero = profile_matchup
+        profile_matchup = ""
+    else:
+        hero = f'<img src="{root}{article["heroImage"]}" alt="{esc(article["title"])}">' if article["heroImage"] else f'<div class="article-hero-placeholder {esc(article["heroTheme"])}"><span>{esc(article["type"])}</span></div>'
     stats = "".join(f"<li><strong>{esc(k)}</strong><span>{esc(v)}</span></li>" for k, v in article["keyStats"])
     body = "\n".join(f"<p>{esc(p)}</p>" for p in article["body"])
     related_html = "".join(article_card(a, 2) for a in related)
+    profile_block = f"\n            {profile_matchup}" if profile_matchup else ""
     page_body = f"""
       <article class="article-page">
         <a class="back-link" href="{root}wire/">Back to Dynasty Wire</a>
@@ -443,7 +517,7 @@ def article_page(article):
             <h1>{esc(article['title'])}</h1>
             <p class="dek">{esc(article['dek'])}</p>
             <div class="article-meta">{esc(article['author'])} | {esc(article['location'])} | {esc(article['published'])}</div>
-            <div class="article-hero">{hero}</div>
+            <div class="article-hero">{hero}</div>{profile_block}
             <div class="article-body">{body}</div>
           </main>
           <aside class="article-sidebar">
@@ -476,9 +550,9 @@ write(SITE / "acc" / "index.html", simple_page("ACC Standings", "ACC", "A fuller
 """))
 write(SITE / "players" / "index.html", simple_page("Impact Players", "Players", "Players shaping the Week 13 rivalry story.", """
   <div class="cards-3">
-    <article class="panel player-card"><span>QB | Virginia Tech</span><h2>Mike Vick Jr.</h2><p>3,892 season passing yards, 44 TD, 15 INT. Week 12: 296 yards, 4 TD, 1 INT.</p></article>
+    <article class="panel player-card featured-player"><img src="../assets/players/mike-vick-jr.png" alt="Mike Vick Jr. Virginia Tech player card"><span>QB | Virginia Tech | 91 OVR</span><h2>Mike Vick Jr.</h2><p>Left-handed dual threat. 3,892 season passing yards, 44 TD, 15 INT. Week 12: 296 yards, 4 TD, 1 INT.</p></article>
     <article class="panel player-card"><span>WR | Virginia Tech</span><h2>Marquis Woodside</h2><p>National Offensive Player of the Week after 10 catches, 190 yards, and 4 TD.</p></article>
-    <article class="panel player-card"><span>QB | Virginia</span><h2>Devante Sampson</h2><p>2,932 passing yards, 25 TD, 8 INT entering the Commonwealth Clash.</p></article>
+    <article class="panel player-card featured-player"><img src="../assets/players/devante-sampson.png" alt="Devante Sampson Virginia player card"><span>QB | Virginia | 84 OVR</span><h2>Devante Sampson</h2><p>6-foot-6 pocket passer. 2,932 passing yards, 25 TD, 8 INT entering the Commonwealth Clash.</p></article>
     <article class="panel player-card"><span>WR | Virginia</span><h2>D. Lowell</h2><p>55 catches, 796 yards, 9 TD. A key explosive option for the Cavaliers.</p></article>
     <article class="panel player-card"><span>RB | Virginia</span><h2>H. Sanders</h2><p>173 carries, 914 rushing yards, 12 TD. Virginia's pace-control lever.</p></article>
     <article class="panel player-card"><span>WR | Virginia Tech</span><h2>B. Rowley</h2><p>84 catches, 1,272 yards, 16 TD. Another reason defenses cannot overcommit to Woodside.</p></article>
