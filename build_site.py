@@ -7,6 +7,42 @@ DATA = SITE.parent / "data"
 
 articles = [
     {
+        "id": "a7",
+        "slug": "acc-championship-woodside-heisman-miami",
+        "type": "ACC Championship",
+        "title": "Virginia Tech Outlasts Miami in 58-55 ACC Championship Classic",
+        "dek": "The Hokies survived Miami's haymakers, won an overtime track meet, and left Charlotte with Woodside at the front of the Heisman race and Brownlee right behind him.",
+        "author": "Commonwealth Wire Staff",
+        "location": "Charlotte, NC",
+        "year": 2028,
+        "week": "ACC Championship",
+        "featuredTeam": "Virginia Tech",
+        "featuredPlayer": "Marquis Woodside",
+        "tags": ["Virginia Tech", "Miami", "ACC Championship", "Heisman", "Marquis Woodside"],
+        "relatedArticleIds": ["a2", "a6", "a1"],
+        "heroImage": "assets/action/acc-championship-hero.svg",
+        "heroTheme": "vt",
+        "published": "2028 ACC Championship",
+        "keyStats": [
+            ("Final", "Virginia Tech 58, Miami 55 (OT)"),
+            ("Records", "Virginia Tech 12-1, Miami 10-3"),
+            ("Woodside", "9 REC, 196 YDS, 4 TD"),
+            ("Vick Jr.", "22-29, 361 YDS, 5 TD"),
+            ("Brownlee", "61-yard TD, Heisman top five"),
+            ("Overton", "21 CAR, 190 YDS, 3 TD"),
+        ],
+        "body": [
+            "The ACC Championship did not settle down. It never even pretended to. Virginia Tech and Miami turned Charlotte into a five-quarter sprint, traded explosives like neither defense had been invited, and left the Hokies standing at midfield with a 58-55 overtime win, a conference trophy, and the kind of Heisman case that voters can feel before they even open the stat sheet.",
+            "Miami made the first half feel dangerous. The Hurricanes scored 10 in the first quarter, then detonated for 21 in the second, including an 81-yard strike to DeMarco Hodges and a one-yard Dennard Fontaine plunge that briefly made the night feel like it was tilting green and orange. Virginia Tech did not flinch. Mike Vick Jr. answered with distance throws, tempo, and the calm of a quarterback who knows he has the most frightening receiver in the country working downfield.",
+            "That receiver was Marquis Woodside, and the championship game became his closing argument. Woodside caught nine passes for 196 yards and four touchdowns, stacking scores of 64, 41, 2, and 25 yards across regulation and overtime. Earlier in the postseason push, he had already broken the ACC single-season receiving yards record. Against Miami, he added the signature game: not a stat pad, not a blowout souvenir, but four touchdowns in a title fight that demanded every one of them.",
+            "The scoring trend told the story. Miami kept landing big shots; Virginia Tech kept answering with longer drives and cleaner situational football. The Hurricanes finished with 553 yards and 451 through the air, but the Hokies countered with 612 total yards, 251 on the ground, and an absurd 8-for-11 mark on third down. When the game became a possession-by-possession pressure test, Virginia Tech had the sturdier engine.",
+            "Vick Jr. was the accelerator. He went 22-of-29 for 361 yards, five touchdowns and one interception, spreading the field just enough to keep Miami from living over Woodside. Nick Brownlee's 61-yard touchdown in the first quarter mattered beyond the scoreboard because it reminded everyone that the Hokies' Heisman race is not a one-man billboard. Brownlee is there too, sitting in the national Heisman picture and forcing defenses to pay for every extra body they lean toward Woodside.",
+            "The balance came from Jeff Overton, who turned 21 carries into 190 yards and three touchdowns. His 48-yard third-quarter run changed the texture of the game. His four-yard overtime score gave Virginia Tech the lead back when the whole night was wobbling. And after Miami answered with a 63-yard two-point conversion pass in the fourth quarter and a field goal in overtime, the Hokies still had one more answer.",
+            "That final answer was vintage 2028 Virginia Tech: Vick to Woodside, 25 yards, pressure in the building, no panic in the throw. It was not just the winning touchdown. It was the season's thesis statement in one route. The Hokies can beat you with the quarterback, the record-breaking receiver, the second Heisman candidate, or the back who quietly turns a track meet into a body blow.",
+            "Virginia Tech leaves the ACC Championship at 12-1, with Miami falling to 10-3 after a performance that would have won a quieter title game. The Hokies have the trophy, the playoff résumé, and now the awards narrative. Woodside should wake up as the Heisman favorite. Brownlee being in the conversation only makes the offense look more impossible. The ACC title belonged to Virginia Tech on the scoreboard, but by the time the confetti settled, the national conversation belonged to Blacksburg too.",
+        ],
+    },
+    {
         "id": "a1",
         "slug": "woodside-turns-wake-forest-into-warning-shot",
         "type": "Dynasty Wire",
@@ -227,9 +263,9 @@ articles = [
 article_by_id = {article["id"]: article for article in articles}
 
 standings = [
-    ("1", "Virginia Tech", "10-1", "7-1", "W3", 436, 205, "+231", "#6", "W 49-7 vs Wake Forest", "vs #10 Virginia"),
-    ("2", "Virginia", "9-2", "6-2", "BYE", 351, 229, "+122", "#10", "Bye", "at #6 Virginia Tech"),
-    ("3", "Miami", "9-2", "6-2", "W2", 387, 251, "+136", "#13", "W vs Duke", "vs Boston College"),
+    ("1", "Virginia Tech", "12-1", "ACC Champions", "W5", 494, 260, "+234", "CFP bound", "W 58-55 vs Miami", "Playoff selection next"),
+    ("2", "Miami", "10-3", "ACC runner-up", "L1", 442, 309, "+133", "Bubble", "L 58-55 vs Virginia Tech", "Bowl/playoff fate pending"),
+    ("3", "Virginia", "9-3", "6-3", "L1", 351, 229, "+122", "Top-25 hopeful", "L at Virginia Tech", "Bowl selection next"),
     ("4", "Georgia Tech", "8-3", "6-3", "W1", 332, 266, "+66", "#21", "W vs NC State", "Regular season complete"),
     ("5", "Clemson", "8-3", "5-3", "L1", 348, 238, "+110", "NR", "L vs Florida State", "at South Carolina"),
     ("6", "Florida State", "7-4", "5-3", "W1", 321, 275, "+46", "NR", "W vs Clemson", "vs Florida"),
@@ -247,8 +283,8 @@ national_snapshot = [
     ("#3", "Texas", "10-1", "SEC", "One-loss power still in the top tier"),
     ("#4", "Oregon", "10-1", "Big Ten", "Explosive profile keeps CFP pressure high"),
     ("#5", "Georgia", "10-1", "SEC", "Still lurking near the top line"),
-    ("#6", "Virginia Tech", "10-1", "ACC", "Commonwealth Clash can lock in the narrative"),
-    ("#10", "Virginia", "9-2", "ACC", "Road upset would shake the CFP bubble"),
+    ("TBD", "Virginia Tech", "12-1", "ACC Champion", "Beat Virginia, then Miami, and now waits on playoff seeding"),
+    ("TBD", "Miami", "10-3", "ACC runner-up", "Lost a 58-55 overtime classic in Charlotte"),
 ]
 
 recruit_battles = [
@@ -282,7 +318,7 @@ def nav(depth=0, active="Home"):
     <header class="masthead">
       <a class="brand" href="{root}index.html" aria-label="Commonwealth Wire home">
         <span class="network">CW</span>
-        <span><strong>Commonwealth Wire</strong><em>EA College Football Dynasty | 2028 Week 13</em></span>
+        <span><strong>Commonwealth Wire</strong><em>EA College Football Dynasty | 2028 ACC Champions</em></span>
       </a>
       <nav aria-label="Primary">{items}</nav>
     </header>
@@ -291,10 +327,10 @@ def nav(depth=0, active="Home"):
 def ticker():
     return """
     <section class="scorebar" id="scores">
-      <a class="scorebox final" href="scores/"><span>Final</span><strong>Virginia Tech 49</strong><em>Wake Forest 7</em></a>
-      <a class="scorebox" href="scores/"><span>Bye</span><strong>Virginia</strong><em>9-2 | #10 CFP</em></a>
-      <a class="scorebox live" href="clash/"><span>Next</span><strong>#10 Virginia at #6 Virginia Tech</strong><em>Commonwealth Clash</em></a>
-      <a class="scorebox" href="acc/"><span>ACC</span><strong>1. VT | 2. UVA</strong><em>Title race pressure</em></a>
+      <a class="scorebox final" href="scores/"><span>ACC Final</span><strong>Virginia Tech 58</strong><em>Miami 55 | OT</em></a>
+      <a class="scorebox final" href="articles/acc-championship-woodside-heisman-miami/"><span>Champions</span><strong>Virginia Tech</strong><em>ACC title | 12-1</em></a>
+      <a class="scorebox live" href="players/"><span>Heisman</span><strong>Woodside favorite</strong><em>Brownlee in the race</em></a>
+      <a class="scorebox" href="acc/"><span>ACC</span><strong>VT over Miami</strong><em>58-55 classic</em></a>
     </section>
     """
 
@@ -382,66 +418,66 @@ def module_grid():
     return '<div class="module-grid">' + "".join(f'<article class="mini-module"><span>{esc(t)}</span><p>{esc(b)}</p></article>' for t, b in modules) + "</div>"
 
 def home():
-    lead = articles[1]
+    lead = articles[0]
     body = f"""
       <section class="hero-layout">
         <a class="hero-card" href="articles/{lead['slug']}/">
-          <img src="assets/action/mike-vick-jr-rollout.jpg" alt="Mike Vick Jr. leads Virginia Tech into the Commonwealth Clash">
+          <img src="{esc(lead['heroImage'])}" alt="Virginia Tech wins the ACC Championship over Miami">
           <span class="hero-copy">
             <span class="kicker">Top Story</span>
             <span class="hero-title">{esc(lead['title'])}</span>
             <span class="hero-dek">{esc(lead['dek'])}</span>
-            <span class="byline">{esc(lead['author'])} | Week 13</span>
+            <span class="byline">{esc(lead['author'])} | ACC Championship</span>
           </span>
         </a>
         <aside class="headline-stack">
-          {article_card(articles[0])}
+          {article_card(articles[1])}
           {article_card(articles[2])}
-          {article_card(articles[5])}
+          {article_card(articles[6])}
         </aside>
       </section>
 
       <section class="section-block clash-center">
         <div class="section-head">
-          <span class="kicker">Week 13</span>
-          <h1>Commonwealth Clash Preview Center</h1>
-          <p>#10 Virginia visits #6 Virginia Tech with the ACC title race, CFP positioning, and state bragging rights all pressed into one rivalry night.</p>
+          <span class="kicker">ACC Champions</span>
+          <h1>Virginia Tech Wins the ACC in a 58-55 Overtime Classic</h1>
+          <p>The Hokies beat Virginia to reach Charlotte, then outlasted Miami behind Woodside's four touchdowns, Vick Jr.'s five scoring throws, and Overton's late ground game.</p>
         </div>
         <div class="preview-grid">
-          <article><span>Matchup</span><strong>#10 Virginia at #6 Virginia Tech</strong><p>Virginia comes off a bye. Virginia Tech comes off a 49-7 statement.</p></article>
-          <article><span>Stakes</span><strong>ACC race, CFP leverage, state control</strong><p>The winner owns the cleanest Commonwealth narrative entering the postseason.</p></article>
-          <article><span>QB Matchup</span><strong>Mike Vick Jr. vs Devante Sampson</strong><p>Vick has the Heisman noise. Sampson has the chance to steal the week.</p></article>
-          <article><span>X-Factor</span><strong>Marquis Woodside</strong><p>After 10 catches, 190 yards, and 4 TD, every coverage call starts with him.</p></article>
-          <article><span>VT Needs</span><strong>Start fast, force Virginia to chase</strong><p>Make the bye-week script irrelevant by winning the first two drives.</p></article>
-          <article><span>UVA Needs</span><strong>Shorten the game and hit explosives</strong><p>Keep Vick Jr. off rhythm and make the fourth quarter uncomfortable.</p></article>
-          <article><span>Fake Spread</span><strong>Virginia Tech -4.5</strong><p>Prediction desk leans Hokies 34-27, with upset volatility very much alive.</p></article>
-          <article><span>State of the Commonwealth</span><strong>The state has receipts ready</strong><p>One family rivalry, one ACC race, and one week of screenshots waiting.</p></article>
+          <article><span>Final</span><strong>Virginia Tech 58, Miami 55</strong><p>Overtime in Charlotte. No breathing room, no safe lead.</p></article>
+          <article><span>Records</span><strong>VT 12-1 | Miami 10-3</strong><p>The Hokies now wait on playoff seeding as ACC champions.</p></article>
+          <article><span>Woodside</span><strong>9 REC, 196 YDS, 4 TD</strong><p>The title-game performance that made him the Heisman favorite.</p></article>
+          <article><span>Vick Jr.</span><strong>22-29, 361 YDS, 5 TD</strong><p>Efficient, explosive, and calm inside the storm.</p></article>
+          <article><span>Brownlee</span><strong>61-yard touchdown</strong><p>Also sitting in the Heisman race, which is frankly rude to every defense.</p></article>
+          <article><span>Overton</span><strong>21 CAR, 190 YDS, 3 TD</strong><p>The hammer that kept Miami honest when the passing game had fireworks.</p></article>
+          <article><span>Trend</span><strong>Miami fast, VT relentless</strong><p>Miami scored 31 by halftime; Virginia Tech kept answering.</p></article>
+          <article><span>Legacy</span><strong>ACC crown to Blacksburg</strong><p>Beat Virginia, beat Miami, lift the trophy.</p></article>
         </div>
-        <div class="home-qb-duel" aria-label="Quarterback matchup">
+        <div class="home-qb-duel" aria-label="Championship impact players">
           <article class="qb-panel vt">
             <img src="assets/action/mike-vick-jr-rollout.jpg" alt="Mike Vick Jr. rolling left to pass for Virginia Tech">
-            <div><span>Virginia Tech | 91 OVR</span><strong>Mike Vick Jr.</strong><p>Left-handed dual threat | 3,892 YDS | 44 TD | 15 INT</p></div>
+            <div><span>Virginia Tech | QB</span><strong>Mike Vick Jr.</strong><p>22-of-29, 361 yards, 5 TD in the ACC Championship.</p></div>
           </article>
-          <div class="versus-mark"><span>QB Matchup</span><strong>VS</strong><em>Explosive creation meets pocket control</em></div>
+          <div class="versus-mark"><span>Heisman Race</span><strong>1-2 punch</strong><em>Woodside favorite, Brownlee still on the board</em></div>
           <article class="qb-panel uva">
-            <img src="assets/action/devante-sampson-pocket.jpg" alt="Devante Sampson passing from the pocket for Virginia">
-            <div><span>Virginia | 84 OVR</span><strong>Devante Sampson</strong><p>6-foot-6 pocket passer | 2,932 YDS | 25 TD | 8 INT</p></div>
+            <img src="assets/action/acc-championship-hero.svg" alt="Virginia Tech ACC Championship graphic">
+            <div><span>Virginia Tech | WR room</span><strong>Woodside + Brownlee</strong><p>Woodside went 9/196/4; Brownlee struck from 61 and remains in the Heisman picture.</p></div>
           </article>
         </div>
-        <a class="button-link" href="articles/commonwealth-clash-preview/">Read the full preview</a>
+        <a class="button-link" href="articles/acc-championship-woodside-heisman-miami/">Read the full championship story</a>
       </section>
 
       <section class="dashboard-grid">
         <div class="main-column">
           <section class="panel">
             <div class="panel-head"><h2>Latest Scores</h2><a href="scores/">Full scoreboard</a></div>
-            <div class="score-summary"><strong>Virginia Tech 49</strong><span>Wake Forest 7</span><em>Final | Week 12</em></div>
-            <div class="score-summary muted"><strong>Virginia</strong><span>Bye</span><em>9-2 | #10 CFP</em></div>
+            <div class="score-summary"><strong>Virginia Tech 58</strong><span>Miami 55</span><em>ACC Championship | OT</em></div>
+            <div class="score-summary muted"><strong>Virginia Tech</strong><span>beat Virginia</span><em>Advanced to ACC title game</em></div>
           </section>
 
           <section class="panel">
             <div class="panel-head"><h2>Dynasty Wire</h2><a href="wire/">All articles</a></div>
-            <div class="feed-list">{''.join(article_card(a) for a in articles[1:6])}</div>
+            <div class="feed-list">{''.join(article_card(a) for a in articles[:6])}</div>
           </section>
 
           <section class="panel">
@@ -453,15 +489,15 @@ def home():
         <aside class="side-column">
           <section class="panel">
             <div class="panel-head tight"><h2>ACC Snapshot</h2><a href="acc/">Table</a></div>
-            <ol class="rank-list"><li><strong>Virginia Tech</strong><span>10-1 | 7-1 | #6</span></li><li><strong>Virginia</strong><span>9-2 | 6-2 | #10</span></li><li><strong>Miami</strong><span>9-2 | 6-2 | #13</span></li><li><strong>Georgia Tech</strong><span>8-3 | 6-3 | #21</span></li></ol>
+            <ol class="rank-list"><li><strong>Virginia Tech</strong><span>12-1 | ACC Champions</span></li><li><strong>Miami</strong><span>10-3 | ACC runner-up</span></li><li><strong>Virginia</strong><span>9-3 | rivalry loss</span></li><li><strong>Georgia Tech</strong><span>8-3 | bowl-bound</span></li></ol>
           </section>
           <section class="panel">
             <div class="panel-head tight"><h2>CFP Top Teams</h2><a href="acc/">Context</a></div>
-            <ol class="rank-list"><li><strong>#1 Ohio State</strong><span>11-0</span></li><li><strong>#2 USC</strong><span>11-0</span></li><li><strong>#6 Virginia Tech</strong><span>10-1</span></li><li><strong>#10 Virginia</strong><span>9-2</span></li></ol>
+            <ol class="rank-list"><li><strong>Virginia Tech</strong><span>12-1 ACC champ</span></li><li><strong>Ohio State</strong><span>unbeaten contender</span></li><li><strong>USC</strong><span>unbeaten contender</span></li><li><strong>Miami</strong><span>10-3 after OT loss</span></li></ol>
           </section>
           <section class="panel">
             <div class="panel-head tight"><h2>Heisman Watch</h2></div>
-            <div class="spotlight"><span>QB | Virginia Tech</span><strong>Mike Vick Jr.</strong><p>3,892 passing yards, 44 TD, 15 INT. Week 12: 296 yards, 4 TD.</p></div>
+            <div class="spotlight"><span>WR | Virginia Tech</span><strong>Marquis Woodside</strong><p>Heisman favorite after 9 catches, 196 yards, and 4 TD in the ACC title game. Nick Brownlee is in the race too.</p></div>
           </section>
           <section class="panel">
             <div class="panel-head tight"><h2>Recruiting Buzz</h2><a href="recruiting/">HQ</a></div>
@@ -469,8 +505,8 @@ def home():
           </section>
           <section class="panel">
             <div class="panel-head tight"><h2>Record Watch</h2></div>
-            <div class="record-row"><strong>4</strong><span>Woodside receiving TD vs Wake Forest</span></div>
-            <div class="record-row"><strong>190</strong><span>Woodside receiving yards vs Wake Forest</span></div>
+            <div class="record-row"><strong>ACC</strong><span>Woodside set the single-season receiving yards record</span></div>
+            <div class="record-row"><strong>196</strong><span>Woodside receiving yards vs Miami</span></div>
           </section>
         </aside>
       </section>
@@ -541,28 +577,28 @@ def write(path, text):
     path.write_text(text)
 
 write(SITE / "index.html", home())
-write(SITE / "scores" / "index.html", simple_page("Scores", "Scores", "Week 12 final and Week 13 rivalry setup.", """
+write(SITE / "scores" / "index.html", simple_page("Scores", "Scores", "ACC Championship final, plus the rivalry result that sent Virginia Tech to Charlotte.", """
   <div class="cards-2">
-    <article class="panel"><span class="kicker">Final</span><h2>Virginia Tech 49, Wake Forest 7</h2><p>VT: 489 total yards, 404 passing yards, 85 rushing yards, 5-8 on third down. Wake Forest: 222 total yards.</p></article>
-    <article class="panel"><span class="kicker">Bye</span><h2>Virginia</h2><p>The Cavaliers rested at 9-2 overall, 6-2 ACC, and #10 CFP before traveling to Blacksburg.</p></article>
-    <article class="panel"><span class="kicker">Next</span><h2>#10 Virginia at #6 Virginia Tech</h2><p>Commonwealth Clash week. ACC title race pressure, CFP pressure, and one family scoreboard.</p></article>
+    <article class="panel"><span class="kicker">ACC Championship</span><h2>Virginia Tech 58, Miami 55</h2><p>Overtime final. VT: 612 total yards, 251 rushing yards, 361 passing yards, and 8-of-11 on third down.</p></article>
+    <article class="panel"><span class="kicker">Road to Charlotte</span><h2>Virginia Tech beat Virginia</h2><p>The Hokies handled the rivalry step, advanced to the ACC Championship, and then finished the job against Miami.</p></article>
+    <article class="panel"><span class="kicker">Records</span><h2>VT 12-1, Miami 10-3</h2><p>Virginia Tech exits championship weekend with the ACC trophy and a playoff résumé.</p></article>
   </div>
 """))
-write(SITE / "acc" / "index.html", simple_page("ACC Standings", "ACC", "A fuller standings table for the 2028 Week 13 title race, with national CFP context underneath.", standings_table() + """
+write(SITE / "acc" / "index.html", simple_page("ACC Standings", "ACC", "A fuller standings table after Virginia Tech's 58-55 overtime ACC Championship win over Miami.", standings_table() + """
   <div class="cards-2 section-spacer">
-    <article class="panel title-race"><span class="kicker">ACC Title Race</span><h2>The Commonwealth Clash Is the Table</h2><p>Virginia Tech controls first place at 7-1 in the league. Virginia is one game back and can turn the rivalry into a conference-title argument with a road win. Miami remains close enough that every tiebreaker conversation should be treated carefully until the full schedule is final.</p></article>
-    <article class="panel"><span class="kicker">Graceful Data Note</span><h2>Some league stats are placeholders</h2><p>Points for, points against, and non-rival results can be replaced once more screenshots are extracted.</p></article>
+    <article class="panel title-race"><span class="kicker">ACC Title Race</span><h2>Virginia Tech Finished It</h2><p>The Hokies beat Virginia to reach the championship game, then survived Miami 58-55 in overtime to claim the league.</p></article>
+    <article class="panel"><span class="kicker">Data Note</span><h2>Championship stats are screenshot-backed</h2><p>The Miami final, team yardage, and player lines come from the attached result screens. Some lower-table league figures remain dynasty-hub placeholders.</p></article>
   </div>
   <section class="section-spacer"><div class="panel-head"><h2>National CFP Snapshot</h2><span>Relevant top teams</span></div>""" + national_table() + """</section>
 """))
-write(SITE / "players" / "index.html", simple_page("Impact Players", "Players", "Players shaping the Week 13 rivalry story.", """
+write(SITE / "players" / "index.html", simple_page("Impact Players", "Players", "Players who shaped Virginia Tech's ACC Championship run.", """
   <div class="cards-3">
-    <article class="panel player-card featured-player"><img src="../assets/players/mike-vick-jr.png" alt="Mike Vick Jr. Virginia Tech player card"><span>QB | Virginia Tech | 91 OVR</span><h2>Mike Vick Jr.</h2><p>Left-handed dual threat. 3,892 season passing yards, 44 TD, 15 INT. Week 12: 296 yards, 4 TD, 1 INT.</p></article>
-    <article class="panel player-card"><span>WR | Virginia Tech</span><h2>Marquis Woodside</h2><p>National Offensive Player of the Week after 10 catches, 190 yards, and 4 TD.</p></article>
-    <article class="panel player-card featured-player"><img src="../assets/players/devante-sampson.png" alt="Devante Sampson Virginia player card"><span>QB | Virginia | 84 OVR</span><h2>Devante Sampson</h2><p>6-foot-6 pocket passer. 2,932 passing yards, 25 TD, 8 INT entering the Commonwealth Clash.</p></article>
-    <article class="panel player-card"><span>WR | Virginia</span><h2>D. Lowell</h2><p>55 catches, 796 yards, 9 TD. A key explosive option for the Cavaliers.</p></article>
-    <article class="panel player-card"><span>RB | Virginia</span><h2>H. Sanders</h2><p>173 carries, 914 rushing yards, 12 TD. Virginia's pace-control lever.</p></article>
-    <article class="panel player-card"><span>WR | Virginia Tech</span><h2>B. Rowley</h2><p>84 catches, 1,272 yards, 16 TD. Another reason defenses cannot overcommit to Woodside.</p></article>
+    <article class="panel player-card"><span>WR | Virginia Tech</span><h2>Marquis Woodside</h2><p>Heisman favorite after 9 catches, 196 yards, and 4 TD against Miami. Also set the ACC single-season receiving yards record.</p></article>
+    <article class="panel player-card featured-player"><img src="../assets/players/mike-vick-jr.png" alt="Mike Vick Jr. Virginia Tech player card"><span>QB | Virginia Tech | 91 OVR</span><h2>Mike Vick Jr.</h2><p>ACC title line: 22-of-29, 361 passing yards, 5 touchdowns, 1 interception.</p></article>
+    <article class="panel player-card"><span>WR | Virginia Tech</span><h2>Nick Brownlee</h2><p>Opened the title game with a 61-yard touchdown and sits in the Heisman top five with Woodside.</p></article>
+    <article class="panel player-card"><span>RB | Virginia Tech</span><h2>Jeff Overton</h2><p>21 carries, 190 yards, 3 TD against Miami, including the overtime touchdown that set up the final exchange.</p></article>
+    <article class="panel player-card"><span>Miami</span><h2>Brett Wall</h2><p>Helped Miami keep swinging, including a 63-yard two-point conversion pass in the fourth quarter.</p></article>
+    <article class="panel player-card"><span>Miami</span><h2>DeMarco Hodges</h2><p>Delivered the 81-yard first-half touchdown that made the ACC Championship feel like a track meet.</p></article>
   </div>
 """))
 write(SITE / "recruiting" / "index.html", simple_page("Recruiting HQ", "Recruiting", "The Commonwealth recruiting war gets a rivalry-week front page.", f"""
@@ -579,24 +615,20 @@ write(SITE / "recruiting" / "index.html", simple_page("Recruiting HQ", "Recruiti
   </div>
 """))
 write(SITE / "wire" / "index.html", simple_page("Dynasty Wire", "Dynasty Wire", "News, previews, rumor blurbs, and rivalry-week media noise.", '<div class="feed-grid">' + "".join(article_card(a, 1) for a in articles) + "</div>" + '<div class="section-spacer">' + module_grid() + '</div>'))
-write(SITE / "clash" / "index.html", simple_page("Commonwealth Clash", "Commonwealth Clash", "The Week 13 preview center for #10 Virginia at #6 Virginia Tech.", f"""
+write(SITE / "clash" / "index.html", simple_page("Commonwealth Clash", "Commonwealth Clash", "Virginia Tech beat Virginia, then carried that momentum to the ACC Championship.", f"""
   <div class="preview-grid">
-    <article><span>Matchup</span><strong>#10 Virginia at #6 Virginia Tech</strong><p>Top-10 CFP rivalry game in Blacksburg.</p></article>
-    <article><span>Stakes</span><strong>ACC title race, CFP positioning, state bragging rights</strong><p>Every result changes the family group chat.</p></article>
-    <article><span>QB Matchup</span><strong>Mike Vick Jr. vs Devante Sampson</strong><p>Heisman noise against bye-week preparation.</p></article>
-    <article><span>Key Player</span><strong>Marquis Woodside</strong><p>Virginia's first question is how to cap the explosive plays.</p></article>
-    <article><span>What VT Needs</span><strong>Make Virginia chase</strong><p>Early tempo and explosive passes can erase the bye advantage.</p></article>
-    <article><span>What UVA Needs</span><strong>Turn it into a fourth-quarter game</strong><p>Possessions, Sanders touches, and red-zone finishing.</p></article>
-    <article><span>Prediction</span><strong>Virginia Tech -4.5</strong><p>Commonwealth Wire projects Hokies 34, Cavaliers 27.</p></article>
-    <article><span>X-Factor</span><strong>First turnover</strong><p>A short field could flip the rivalry script immediately.</p></article>
+    <article><span>Result</span><strong>Virginia Tech beat Virginia</strong><p>The Hokies kept the rivalry streak alive and punched the Charlotte ticket.</p></article>
+    <article><span>Aftermath</span><strong>ACC Championship berth</strong><p>The win moved Virginia Tech into the title game against Miami.</p></article>
+    <article><span>Next chapter</span><strong>Virginia Tech 58, Miami 55</strong><p>The rivalry win became the launchpad for an overtime ACC crown.</p></article>
+    <article><span>Program note</span><strong>State control stays in Blacksburg</strong><p>Virginia Tech has now stacked rivalry control with conference hardware.</p></article>
   </div>
-  <div class="section-spacer">{article_card(articles[1], 1, "wide")}</div>
+  <div class="section-spacer">{article_card(articles[0], 1, "wide")}</div>
 """))
 write(SITE / "records" / "index.html", simple_page("Record Watch", "Records", "A growing record book for the dynasty hub.", """
   <div class="cards-3">
-    <article class="panel record-card"><strong>4</strong><span>Marquis Woodside receiving touchdowns vs Wake Forest</span></article>
-    <article class="panel record-card"><strong>190</strong><span>Marquis Woodside receiving yards vs Wake Forest</span></article>
-    <article class="panel record-card"><strong>44</strong><span>Mike Vick Jr. passing touchdowns through Week 12</span></article>
+    <article class="panel record-card"><strong>ACC</strong><span>Marquis Woodside set the ACC single-season receiving yards record.</span></article>
+    <article class="panel record-card"><strong>196</strong><span>Woodside receiving yards vs Miami in the ACC Championship.</span></article>
+    <article class="panel record-card"><strong>58</strong><span>Virginia Tech points in the ACC Championship overtime win.</span></article>
   </div>
 """))
 for article in articles:
